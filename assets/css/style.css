@@ -31,11 +31,6 @@ h6 {
   color: var(--primarytext);
 }
 
-p {
-  font-size: 1rem;
-  line-height: 2rem;
-}
-
 p,
 span,
 label,
@@ -109,8 +104,8 @@ aside .social-media {
 
 aside .social-media ul {
   padding: 1.5rem 1rem;
-  border-top-left-radius: 12px;
-  border-bottom-left-radius: 12px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
   margin: auto;
   background-color: #2d3e50;
   display: flex;
@@ -277,7 +272,7 @@ nav ul li:hover a {
 .about,
 .skill,
 .contact {
-  padding: 3rem;
+  padding: 2rem;
   text-align: center;
   /* background-color: var(--secondarybg);
   border-radius: var(--itemborderradius); */
@@ -372,9 +367,12 @@ button:hover {
 }
 
 footer {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #2d3e50;
   color: var(--primarybg);
+  height: 2rem;
 }
 
 footer p {
