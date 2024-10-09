@@ -55,7 +55,7 @@ a {
   width: fit-content;
   font-weight: 500;
   font-size: 1rem;
-  padding-left: 50px;
+  padding-left: 40px;
 }
 
 .main-container {
@@ -65,7 +65,7 @@ a {
 
 @media screen and (max-width: 1200px) {
   .main-container {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -220,7 +220,7 @@ nav ul li:hover a {
 
 .pre-title::after {
   content: "";
-  width: 13rem;
+  width: 2.5rem;
   height: 1px;
   background-color: var(--linecolor);
   position: absolute;
@@ -236,7 +236,7 @@ nav ul li:hover a {
 }
 
 .hero-left {
-  margin-left: 3rem;
+  padding-left: 3rem;
 }
 
 .hero-right {
@@ -377,4 +377,8 @@ footer {
 
 footer p {
   font-size: 15px;
+}
+
+.about {
+  width: 100vw;
 }
