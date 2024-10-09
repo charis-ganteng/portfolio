@@ -1,5 +1,4 @@
 document.getElementById("burger").addEventListener("click", function () {
-  const navbar = document.getElementById("navbar");
-  navbar.classList.toggle("active");
+  const Menu = document.getElementById("menu");
+  Menu.classList.toggle("active");
 });
-
