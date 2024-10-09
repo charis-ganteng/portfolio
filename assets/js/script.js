@@ -4,7 +4,7 @@ document.getElementById("burger").addEventListener("click", function () {
 });
 
 const USER_ID = 'Charis';
-const TEMPLATE_ID = 'template_edxmnj9';
+const TEMPLATE_ID = 'service_charis';
 
 // Inisialisasi EmailJS
 emailjs.init(USER_ID);
