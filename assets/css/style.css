@@ -289,7 +289,7 @@ nav ul li:hover a {
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   gap: 10rem;
   padding-top: 3rem;
-  justify-content: space-around;
+  justify-content: center;
   /* margin-left: 3rem; */
 }
 
@@ -377,8 +377,4 @@ footer {
 
 footer p {
   font-size: 15px;
-}
-
-.about {
-  width: 100vw;
 }
