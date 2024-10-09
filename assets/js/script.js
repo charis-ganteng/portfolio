@@ -24,9 +24,9 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 
     emailjs.send('service_your_service_id', TEMPLATE_ID, templateParams)
         .then(function(response) {
-            document.getElementById('contact').innerText = 'Pesan berhasil dikirim!';
+            document.getElementById('result').innerText = 'Pesan berhasil dikirim!';
         }, function(error) {
-            document.getElementById('contact').innerText = 'Terjadi kesalahan saat mengirim pesan.';
+            document.getElementById('result').innerText = 'Terjadi kesalahan saat mengirim pesan.';
             console.error('Error:', error);
         });
 });
