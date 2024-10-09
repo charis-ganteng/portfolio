@@ -233,6 +233,7 @@
         <!-- End of Section Contact -->
       </div>
     </header>
+    
     <!-- End of Header -->
     <aside>
       <div class="social-media">
@@ -269,6 +270,25 @@
     <footer>
       <p>Charisma Fitra Andriyan, 2024 | Web Portfolio</p>
     </footer>
-    <script src="assets/js/script.js"></script>
+    
+    <?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = htmlspecialchars($_POST['name']);
+    $email = htmlspecialchars($_POST['email']);
+    $message = htmlspecialchars($_POST['message']);
+
+    $to = "charismafitra05@gmail.com"; // Ganti dengan email Anda
+    $subject = "Pesan dari Form Kontak";
+    $body = "Nama: $name\nEmail: $email\nPesan:\n$message";
+    $headers = "From: $email";
+
+    if (mail($to, $subject, $body, $headers)) {
+        echo "Pesan berhasil dikirim!";
+    } else {
+        echo "Terjadi kesalahan saat mengirim pesan.";
+    }
+}
+?>
+<script src="assets/js/script.js"></script>
   </body>
 </html>
